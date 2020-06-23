@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int row_max, row,coln;
+        printf("enter the number of rows:");
+         scanf("%d", &row_max);
+          for(row=1;row<=row_max;++row)
+          {
+           for(coln=1;coln<=2*row_max-1;++coln)
+            {  
+            if (coln<row_max-(row-1)||coln>(row_max+(row-1)))  
+       {
+                 printf(" ");
+             }
+            else
+            {
+             printf("*");
+             }
+             
+           } printf("\n");
+          } 
+            return 0;
+}
